@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<mavlink>
+        <include>common.xml</include>
+        <!-- NOTE: If the included file already contains a version tag, remove the version tag here, else uncomment to enable. -->
+    <!--<version>3</version>-->
+    <enums>
+    </enums>
+    <messages>
+        <message id="3" name="CA_TRAJECTORY">
+            <description>dwq's custom message test in 2017-4-27</description>
+            <field type="uint64" name="timestamp"></field>
+            <field type="uint64" name="time_start_usec"></field>
+            <field type="uint64" name="time_stop_usec"></field>
+            <field type="float[28]" name="coefficients"></field>
+            <field type="uint16" name="seq_id"></field>
+        </message>
+    </messages>
+</mavlink>
